@@ -40,6 +40,9 @@
    .iphone5se{
     display: none;
    }
+   .iphoneX{
+    display: none;
+   }
    .ipad{
     display: none;
    }
@@ -47,10 +50,10 @@
     display: none;
    }
 
-    @media only screen and (max-width: 375px) {
-
+   /* iphone5se */
+    @media only screen and (max-width: 320px) {
 body{
-  padding-top: 180px;
+  padding-top: 100px;
 }
 h1,h3{
   font-size: 1rem;
@@ -66,10 +69,32 @@ a{
 }
 .iphone5se{
   display: inline;
+}}
+
+/* iphone x */
+@media (min-width: 321px) and (max-width: 375px){
+  body{
+  padding-top: 200px;
+}
+h1,h3{
+  font-size: 1rem;
+}
+p{
+  font-size: 10px;
+}
+a{
+  display: inline;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.iphoneX{
+  display: inline;
+}
 }
 
-/* MEDIA QUERY */
-}
+/* pixel 2xl */
+
 @media (min-width: 376px) and (max-width: 411px){
   body{
   padding-top: 200px;
@@ -91,6 +116,7 @@ a{
 }
 }
 
+/* ipad  */
 @media (min-width: 412px) and (max-width: 768px){
   body{
   padding-top: 230px;
@@ -112,6 +138,7 @@ a{
 }
 }
 
+/* ipadpro  */
 @media (min-width: 769px) and (max-width: 1024px){
   body{
   padding-top: 240px;
@@ -133,13 +160,16 @@ a{
   font-size: 17px;
 }
 }
-@media screen and (min-width: 1025px)
+@media screen and (min-width: 1025px){
+
+}
 
   </style>
 </head>
 <body>
-  <h5 class="pixel2xl">(Pixel 2 XL)</h5h5>
-  <h5 class="iphone5se">(iPhone 5 SE and iPhone X)</h5>
+  <h5 class="pixel2xl">(Pixel 2 XL)</h5>
+  <h5 class="iphone5se">(iPhone 5/SE)</h5>
+  <h5 class="iphoneX">(iPhone X)</h5>
   <h5 class="ipad">(iPad)</h5>
   <h5 class="ipadpro">(iPad Pro)</h5>
   <header>
